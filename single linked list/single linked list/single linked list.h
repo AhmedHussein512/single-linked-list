@@ -1,6 +1,5 @@
 #pragma once
 #include <iostream>
-#include <cstdlib>
 #include <limits>
 #include <string>
 using namespace std;
@@ -20,15 +19,12 @@ class SLinkedList ///single linked list
 public:
     SLinkedList()
     {
-        /// initializing variabled
-
         Head = Last = NULL;
         Size = 0;
     }
     ~SLinkedList()
     {
-        /// deallocation the heap
-
+     
         Node* deleteNode1 = Head, * deleteNode2 = NULL;
 
         while (deleteNode1 != NULL)

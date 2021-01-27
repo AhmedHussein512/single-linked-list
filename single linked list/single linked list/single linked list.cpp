@@ -1,13 +1,10 @@
 #include <iostream>
-#include <cstdlib>
 #include <string>
 #include "single linked list.h"
 using namespace std;
 int main()
 {
     string choice;
-    
-    /// interface for passing template objects
 
     while (true)
     {
@@ -45,7 +42,7 @@ int main()
         {
             cout << "Doubles list was created successfully\n"
                 << "==========================================\n";
-            SLinkedList <short> doubleList;
+            SLinkedList <double> doubleList;
             doubleList.interFace();
         }
         else if (choice == "5")
